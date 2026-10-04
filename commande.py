@@ -3,6 +3,8 @@ total_htva = 0
 
 for p in prix:
     total_htva = total_htva + p
+    if p > 20:
+        print(f"Article cher : {p:.2f} €")
 
 total_tvac = total_htva * 1.21
 
